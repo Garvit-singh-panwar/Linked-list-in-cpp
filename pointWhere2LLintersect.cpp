@@ -98,34 +98,28 @@ void display()
 
 
 
-// node* Intersection_PointOf2LL(node* &first , node* &second)
-// {
-    
-//     node* f_temp = first;
-//     node* s_temp = second;
-//     node* prev = NULL;
-//     while(s_temp != NULL)
-//     { 
-//     while(f_temp != NULL )
-//     {
-//         if( f_temp == s_temp)
-//         {
-//             return f_temp;
-
-//         }
-//         f_temp = f_temp->next;
-//     }
-//         f_temp = first;
-//         s_temp = s_temp->next;
-//     }
-
-//     return NULL;
-// }
-
-
 node* Intersection_PointOf2LL(node* &first , node* &second)
 {
     
+    node* f_temp = first;
+    node* s_temp = second;
+    node* prev = NULL;
+    while(s_temp != NULL)
+    { 
+    while(f_temp != NULL )
+    {
+        if( f_temp == s_temp)
+        {
+            return f_temp;
+
+        }
+        f_temp = f_temp->next;
+    }
+        f_temp = first;
+        s_temp = s_temp->next;
+    }
+
+    return NULL;
 }
 
 int main()
