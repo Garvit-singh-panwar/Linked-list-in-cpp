@@ -106,10 +106,12 @@ node* merge_two_LL(node* &f,node* &s)
     while(q)
     {
         r->next = q;
+        r = r->next;
         q = q->next;
     }
     while(p)
     {
+        r->next = p;
         r = p->next;
         p = p->next;
     }
